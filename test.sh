@@ -1,0 +1,1 @@
+curl https://google-cloud-run-6srdkn7lia-od.a.run.app 
