@@ -7,5 +7,5 @@ app.get("/", function (req, res) {
 });
 
 app.listen(port, function () {
-  console.log(`Google cloud run app listening on port ${port}!`);
+  console.log(`Google cloud run app listening on port ${port}! v2`);
 });
