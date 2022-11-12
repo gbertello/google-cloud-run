@@ -3,9 +3,9 @@ const app = express();
 const port = 8080;
 
 app.get("/", function (req, res) {
-  res.send("Hello there 3!");
+  res.send("Hello world!");
 });
 
 app.listen(port, function () {
-  console.log(`Google cloud run app listening on port ${port}! v3`);
+  console.log(`Google cloud run app listening on port ${port}!`);
 });
