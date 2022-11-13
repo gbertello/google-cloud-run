@@ -4,7 +4,7 @@ import subprocess
 
 def test_create():
   r = requests.get("https://google-cloud-run-6srdkn7lia-uc.a.run.app")
-  assert r.text == "Hello world again!"
+  assert r.text == "Hello world!"
 
 if __name__ == "__main__":
   subprocess.run(["python3", "-m", "pytest", __file__])
