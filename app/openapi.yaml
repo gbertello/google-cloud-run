@@ -1,0 +1,22 @@
+openapi: 3.0.0
+info:
+  title: Google cloud tutorial
+  description: Google cloud prototype
+  version: 1.0.0
+servers:
+  - url: https://google-cloud-run-6srdkn7lia-uc.a.run.app
+    description: Main (production) server
+  - url: https://google-cloud-run-6srdkn7lia-uc.a.run.app
+    description: Internal staging server for testing
+paths:
+  /:
+    get:
+      summary: Returns hello world.
+      description: Test service
+      responses:
+        '200':    
+          description: Text response
+          content:
+            text:
+              schema: 
+                type: string

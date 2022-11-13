@@ -1,8 +1,12 @@
 const express = require("express");
+const swaggerUi = require('swagger-ui-express');
+const yaml = require('yamljs');
+
 const app = express();
+app.use('/api/docs', swaggerUi.serve, swaggerUi.setup(yaml.load('src/' + name + '.yaml')))
 
 app.get("/", function (req, res) {
-  res.send("Hello world again!");
+  res.send("Hello world!");
 });
 
 app.listen(8080);
