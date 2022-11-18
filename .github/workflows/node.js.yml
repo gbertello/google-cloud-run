@@ -22,7 +22,7 @@ jobs:
         node-version: '19.x'
         cache: 'npm'
     - run: python3 -m pip install --upgrade pip
-    - run: pip3 install -r pytest
+    - run: pip3 install pytest
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
