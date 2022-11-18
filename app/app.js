@@ -6,7 +6,7 @@ const app = express();
 app.use('/api/docs', swaggerUi.serve, swaggerUi.setup(yaml.load('app/openapi.yaml')))
 
 app.get("/", function (req, res) {
-  res.send("Hello world 2!");
+  res.send("Hello world 3!");
 });
 
 app.listen(8080);
