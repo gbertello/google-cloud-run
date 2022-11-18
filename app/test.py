@@ -3,7 +3,7 @@ import requests
 import subprocess
 
 def test_create():
-  r = requests.get("https://google-cloud-run-6srdkn7lia-uc.a.run.app")
+  r = requests.get("http://localhost:3000/")
   assert r.text == "Hello world!"
 
 if __name__ == "__main__":

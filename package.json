@@ -3,5 +3,11 @@
     "express": "^4.18.2",
     "swagger-ui-express": "^4.6.0",
     "yamljs": "^0.3.0"
+  },
+  "scripts": {
+    "build": "docker build -t google-cloud-run . && docker run -dit --rm -p 3000:8080 --name google-cloud-run google-cloud-run",
+    "test": "python3 -m pytest app/test.py",
+    "stop": "docker stop google-cloud-run && docker rm google-cloud-run"
+    
   }
 }
