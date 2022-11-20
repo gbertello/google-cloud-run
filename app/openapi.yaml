@@ -6,8 +6,6 @@ info:
 servers:
   - url: https://google-cloud-run-6srdkn7lia-uc.a.run.app
     description: Main (production) server
-  - url: https://google-cloud-run-6srdkn7lia-uc.a.run.app
-    description: Internal staging server for testing
 paths:
   /:
     get:
